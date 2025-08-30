@@ -118,4 +118,8 @@ li {
     margin-bottom: var(--spacing-100);
 }
 
+.section-separator {
+    border-bottom: 1px solid var(--color-stone-150);
+}
+
 
