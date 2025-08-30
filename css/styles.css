@@ -8,6 +8,7 @@
     --color-rose-800: hsl(332, 51%, 32%);
     --color-rose-50: hsl(330, 100%, 98%);
 
+    --spacing-100: 0.8rem;
     --spacing-150: 1.2rem;
     --spacing-200: 1.6rem;
     --spacing-300: 2.4rem;
@@ -15,6 +16,9 @@
     --spacing-500: 4rem;
     --spacing-600: 4.8rem;
     --spacing-1600: 12.8rem;
+
+    --font-family-body: "Outfit", sans-serif;
+    --font-family-heading: "Young Serif", serif;
 
     --font-size-desktop-text-preset-1: 4rem;
     --font-size-desktop-text-preset-2: 2.8rem;
@@ -30,20 +34,18 @@ html {
 
 body {
     font-size: var(--font-size-desktop-text-preset-4);
-    font-family: "Outfit", sans-serif;
+    font-family: var(--font-family-body);
     font-weight: 400;
     color: var(--color-stone-600);
     background-color: var(--color-stone-100);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Young Serif", serif;
+    font-family: var(--font-family-heading);
     font-weight: 400;
     margin: 0;
-}
-
-p {
-    margin: 0;
+    line-height: 1;
 }
 
 h1 {
@@ -56,6 +58,18 @@ h2 {
     color: var(--color-brown-800);
     font-size: var(--font-size-desktop-text-preset-2);
     margin-bottom: var(--spacing-300);
+}
+
+h3 {
+    margin-bottom: var(--spacing-200);
+}
+
+p {
+    margin: 0;
+}
+
+strong {
+    font-weight: 700;
 }
 
 header img {
@@ -83,10 +97,25 @@ header img {
 
 aside {
     background-color: var(--color-rose-50);
+    padding: var(--spacing-300);
 }
 
-aside h2 {
+aside h3 {
+    font-family: Outfit;
     color: var(--color-rose-800);
+    font-family: var(--font-family-body);
     font-size: var(--font-size-desktop-text-preset-3);
+    font-weight: 600;
 }
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+li {
+    margin-bottom: var(--spacing-100);
+}
+
 

@@ -56,6 +56,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 Unlike the previous challenges, this isn't a component but an entire page. So the <header> is the banner for the entire page. Even though the Figma design still has a top level "card" group, I didn't use a card div element this time, as this content will fill the entire page.
 
+The ul list-style-position: inside to ensure the bullets align with the heading, instead of outside.
+
+Although the Figma had fixed spacing/100 (8px) between list items, I used line-height which is a more scalable approach.
+With the font size of 16px 8px is 50%, so the line height is 1.5. But this doesn't work when each list item is multi line. There's no real gap between each element.
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
