@@ -5,12 +5,12 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Approach](#approach)
+  - [Variable Font Sizing](#variable-font-sizing)
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
@@ -39,6 +39,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS clamp()
 - Flexbox
 - Tables
 
@@ -48,9 +49,23 @@ Used CSS variables to control the theme, so it's easy to change. There's a bit m
 
 Added general styles for any table, but added the bold second column only to a nutrition table.
 
+Also uses variable font size for the h1 heading to scale from mobile size to desktop size.
+
+### Variable Font Sizing
+
+The CSS clamp() function is used for the h1 variable font size.
+
+By using the 62.5% root font size trick, I could use rems instead of pixels, where 1 rem = 10px so the maths is easy :) In the CSS Clamp Calculator utility linked below, I set 1rem = 10px to reflect this.
+
+Set the min/max viewport sizes to 375px/1440px as per the style guide. Then set the min/max font sizes to 3.6/4rem to calculate the clamp function values used for the CSS variable.
+
 ### What I learned
 
 Used ```list-style-position: inside``` to align the list item bullets with the heading, instead of outside it.
+
+### Useful resources
+
+- [CSS Clamp Calculator](https://clamp-calculator.netlify.app) - This calculated the CSS clamp function with the correct values as outlined above.
 
 ## Author
 

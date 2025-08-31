@@ -26,6 +26,10 @@
     --font-size-desktop-text-preset-4: 1.6rem;
 
     --font-size-mobile-text-preset-1: 3.6rem;
+
+    /* Use responsive font sizing for main h1 */
+    /* 3.6rem, viewport: 375px -> 4rem, viewport: 1440px */
+    --font-size-h1: clamp(3.6rem, 3.459rem + 0.376vw, 4rem);
 }
 
 html {
@@ -50,8 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     color: var(--color-stone-900);  
-    font-size: var(--font-size-desktop-text-preset-1);
     margin-bottom: var(--spacing-300);
+    font-size: var(--font-size-h1);
 }
 
 h2 {
