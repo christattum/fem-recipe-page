@@ -65,7 +65,6 @@ Still using CSS variables to determine the theme, so it's easy to change. There'
 
 ## TODO
 
-- Padding on top table row means there's too much space after paragraph including the top table margin.
 - Use classes or roles on columns to style them, rather than first-of-type etc.
 
 ### Continued development

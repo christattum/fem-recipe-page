@@ -123,7 +123,7 @@ li {
 }
 
 table {
-    margin-top: var(--spacing-300);
+    margin-top: var(--spacing-150);
     width: 100%;
     border-collapse: collapse;
 }
