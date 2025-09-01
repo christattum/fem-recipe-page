@@ -78,10 +78,13 @@ strong {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
     padding: var(--spacing-1600) var(--spacing-600);
 }
 
 .card {
+    max-width: 736px;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-500);

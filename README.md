@@ -57,11 +57,6 @@ Used ```list-style-position: inside``` to align the list item bullets with the h
 
 Almost missed that the mobile layout has no rounded card and header image padding, so need to pay more attention in future! Had to add the padding to the header and card content separately rather than to the entire card, then add a media query to remove it for the header, along with the card border-radius. This is in one of the final commits.
 
-### TODO
-
-- Card width does not fill desktop width, find a way to constrain
-- Is there a way to scale the main padding for width?
-
 ### Useful resources
 
 - [CSS Clamp Calculator](https://clamp-calculator.netlify.app) - This calculated the CSS clamp function with the correct values as outlined above.
